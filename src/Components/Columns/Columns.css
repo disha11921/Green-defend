@@ -1,0 +1,96 @@
+.one ul {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  row-gap: 10px;
+}
+.one ul li .image::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #00b2ff;
+  left: calc(-7.5px + 7.5px);
+  bottom: calc(-7.5px + 7.5px);
+}
+.one ul li span {
+  font-size: 13px;
+  margin-right: 5px;
+  text-transform: capitalize;
+  color: #fff;
+}
+.one ul li img {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.two .head {
+  direction: rtl;
+  color: #fff;
+}
+.two .head h3 {
+  margin-top: 1rem;
+}
+.two .head small {
+  display: block;
+  margin-bottom: 1rem;
+}
+.two ul li a {
+  color: #d0ddd0;
+  font-weight: bold;
+}
+
+.two ul li a.active,
+.two ul li a:hover {
+  color: #fff;
+}
+.cols .column:last-of-type ul li a {
+  text-decoration: none;
+}
+
+.two .close {
+  display: none;
+}
+
+.move-to-right {
+  transform: translateX(100%);
+}
+
+@media (max-width: 991px) {
+  .one {
+    display: none;
+  }
+  .two {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    height: 100vh;
+    transition: transform 0.5s;
+  }
+  .two .head {
+    color: #3d7a4b;
+  }
+  .two small {
+    color: #3d7a4b;
+  }
+  .two ul li a {
+    color: #3d7a4b;
+  }
+  .two ul li a.active,
+  .two ul li a:hover {
+    color: #5ed8a5;
+  }
+  .two button {
+    background-color: #3d7a4b;
+    color: #fff;
+  }
+  .two .close {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+  }
+}

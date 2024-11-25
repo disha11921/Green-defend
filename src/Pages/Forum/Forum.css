@@ -1,0 +1,128 @@
+.inner {
+  display: block !important;
+}
+.inner .ask {
+  position: sticky;
+  top: 10px;
+  left: 0;
+  z-index: 100;
+  border: none;
+  padding: 10px 40px;
+  background-color: #135b3c;
+  color: #fff;
+}
+@media (max-width: 991px) {
+  .cols .three .inner {
+    padding: 15px;
+  }
+  .inner .ask {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.post {
+  background-color: #e4f0e9;
+  border-radius: 20px;
+}
+.post:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+.post .body {
+  padding: 15px;
+}
+.post .background {
+  background-color: rgb(0 0 0 / 0.5);
+  background-blend-mode: darken;
+  height: 200px;
+  border-radius: 20px 20px 0 0;
+}
+.post .body .head {
+  display: flex;
+  justify-content: flex-end;
+}
+.post .head .user-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.post .head .text {
+  display: grid;
+  gap: 5px;
+  margin-right: 1rem;
+  text-align: right;
+}
+.post .head .text .user {
+  color: #1b8659;
+  font-weight: bold;
+}
+.post .head .text span:first-of-type {
+  grid-row: 1 / 3;
+}
+.post .head .text span:last-of-type {
+  grid-column: 1 / -1;
+}
+.post .posts-number {
+  cursor: pointer;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.post .body .settings {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.post .settings span {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+.post i {
+  font-size: 20px;
+}
+.post .settings .likes span i {
+  margin: 0 10px;
+}
+.post section {
+  padding: 20px;
+  background-color: #fff;
+}
+.post section .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.post section .head .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  font-size: 18px;
+}
+.post section .head .grid p {
+  margin: 0;
+}
+.post section .head .grid .name {
+  font-weight: bold;
+  color: #1b8659;
+}
+.post section .head img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.post section .settings {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row-reverse;
+}
+@media (max-width: 991px) {
+  .post form {
+    grid-template-columns: 1fr !important;
+  }
+}
+.likes-color {
+  color: #1b8659 !important;
+}

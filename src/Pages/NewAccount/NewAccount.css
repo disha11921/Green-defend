@@ -1,0 +1,7 @@
+small {
+  display: block;
+  padding-top: 10px;
+  color: var(--bs-danger);
+  font-weight: bold;
+  text-align: right;
+}

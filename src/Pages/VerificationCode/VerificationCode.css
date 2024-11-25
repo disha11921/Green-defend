@@ -1,0 +1,22 @@
+/* Start Verification Code */
+.verification-code form,
+.verification-code .setting,
+.verification-code a {
+    max-width: 500px;
+    margin: auto;
+}
+.verification-code form {
+    display: flex;
+    justify-content: space-between;
+}
+.verification-code form input {
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    font-size: 70px;
+    border: 1px solid rgb(0 0 0 / 20%);
+    border-radius: 10px;
+}
+.verification-code .setting {
+    margin-top: 2rem;
+}

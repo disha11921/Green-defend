@@ -1,0 +1,14 @@
+#EditProfile input {
+  width: 100%;
+  background-color: transparent;
+  padding: 15px;
+  direction: rtl;
+  border: none;
+  border-bottom: 0.5px solid #999999;
+  outline: none;
+  margin-bottom: 1rem;
+}
+#EditProfile label {
+  display: block;
+  direction: rtl;
+}

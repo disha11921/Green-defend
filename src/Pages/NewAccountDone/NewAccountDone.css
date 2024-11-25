@@ -1,0 +1,14 @@
+/* Start New Account Done */
+.new-account-done {
+    margin-bottom: 0;
+    height: 100vh;
+    background-image: url(../../assets/Images/test.jpg);
+    background-size: cover;
+    background-color: rgb(0 0 0 / 50%);
+    background-blend-mode: darken;
+    color: var(--whiteColor);
+    border-bottom-left-radius: 90px;
+}
+.new-account-done h2 {
+    font-size: 40px;
+}

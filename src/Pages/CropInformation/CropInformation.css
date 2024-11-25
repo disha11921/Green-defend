@@ -1,0 +1,29 @@
+.accordion {
+  display: grid;
+  gap: 15px;
+  direction: rtl !important;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.12);
+}
+.accordion-item,
+.accordion-button {
+  background-color: #b0c1b0 !important;
+}
+.accordion-item {
+  border: 1px solid #b0c1b0 !important;
+}
+.accordion-button:focus {
+  color: #000 !important;
+  border-color: #b0c1b0 !important;
+  box-shadow: none !important;
+}
+.accordion-button::after {
+  margin-right: auto;
+  color: #000 !important;
+  margin-left: 0px !important;
+}
+
+@media (max-width: 767px) {
+  .accordion {
+    padding: 0 15px;
+  }
+}
